@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - SunMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SunMart</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html">Cart 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Our Products</h1>
+    <section class="product-grid">
+        <!-- Repeat this block for multiple products -->
+        <div class="product-card">
+            <img src="images/solar-panel.jpg" alt="Solar Panel Kit">
+            <h3>DIY Solar Kit</h3>
+            <p>$120.00</p>
+            <button onclick="addToCart('DIY Solar Kit',120)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/led.jpg" alt="LED Kit">
+            <h3>LED Energy Kit</h3>
+            <p>$45.00</p>
+            <button onclick="addToCart('LED Energy Kit',45)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/tracking.jpg" alt="Energy Tracker">
+            <h3>Energy Tracker</h3>
+            <p>$80.00</p>
+            <button onclick="addToCart('Energy Tracker',80)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/battery.jpg" alt="Home Battery">
+            <h3>Home Battery</h3>
+            <p>$200.00</p>
+            <button onclick="addToCart('Home Battery',200)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/inverter.jpg" alt="Solar Inverter">
+            <h3>Solar Inverter</h3>
+            <p>$150.00</p>
+            <button onclick="addToCart('Solar Inverter',150)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
